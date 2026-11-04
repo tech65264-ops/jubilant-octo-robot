@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BANNER | SPACE EXPLORER</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080b1f;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADINGS */
+
+h1 {
+    color: #b388ff;
+    text-align: center;
+}
+
+h2 {
+    color: #64d8ff;
+    text-align: center;
+}
+
+h3 {
+    color: #e0e0ff;
+}
+
+/* LINKS */
+
+a {
+    color: #64d8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff80df;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    min-height: 65px;
+    padding: 15px 8px;
+
+    background: #050817;
+    border-bottom: 2px solid #3388ff;
+
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    box-shadow: 0 5px 20px #0008;
+}
+
+nav a {
+    display: inline-block;
+    color: #64d8ff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #16284b;
+    color: #ff80df;
+}
+
+/* IMAGE */
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* BANNER */
+
+banner {
+    display: block;
+    width: 100%;
+}
+
+banner img {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+/* SEARCH */
+
+.search-section {
+    padding: 25px 15px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #3388ff;
+    border-radius: 7px;
+    background: #101831;
+    color: white;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+    background: #287bda;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* BUTTON */
+
+button {
+    padding: 12px 20px;
+    background: #287bda;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #7545d9;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+    border-top: 1px solid #ffffff22;
+    color: #9ba9c4;
+    line-height: 1.8;
+}
+
+.credit {
+    color: #64d8ff;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    nav {
+        gap: 4px;
+        padding: 10px 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 9px 8px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .search-section {
+        padding: 20px 12px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="banner.html">🚀 Banner</a>
+    <a href="space.html">🌌 Space</a>
+    <a href="solarsystem.html">🪐 Solar System</a>
+    <a href="planets.html">Planets</a>
+    <a href="earth.html">🌍 Earth</a>
+    <a href="galaxies.html">Galaxies</a>
+    <a href="stars.html">⭐ Stars</a>
+    <a href="list.html">Explore</a>
+</nav>
+
+<!-- ORIGINAL BANNER -->
+
+<banner>
+    <img src="spaceimage.gif"
+         alt="Space Universe"
+         width="100%"
+         height="30%">
+</banner>
+
+<!-- SEARCH SECTION -->
+
+<div class="search-section">
+
+    <h2>Search the Universe 🔭</h2>
+
+    <form action="https://www.google.com/search"
+          method="get"
+          target="_blank">
+
+        <input
+            type="text"
+            name="q"
+            placeholder="Search about space..."
+            size="40"
+            required
+        >
+
+        <input type="submit" value="Search">
+
+    </form>
+
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ⬆️ Back to Top
+    </button>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 SPACE EXPLORER
+
+    <br>
+
+    Made with ❤️ for the universe
+
+    <br><br>
+
+    <span class="credit">
+        MADE BY HUA XIAO MIN ✦
+    </span>
+
+</footer>
+
+</body>
+</html>
